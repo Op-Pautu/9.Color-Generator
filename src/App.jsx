@@ -6,7 +6,7 @@ import Values from "values.js";
 function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values("#f15025").all(10));
+  const [list, setList] = useState(new Values("#eee").all(10));
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ function App() {
           <input
             type="text"
             value={color}
-            placeholder="#f15025"
+            placeholder="#eee"
             onChange={(e) => setColor(e.target.value)}
             className={`${error ? "error" : null}`}
           />
@@ -37,7 +37,6 @@ function App() {
       </section>
       <section className="colors">
         {list.map((color, index) => {
-          console.log(color);
           return (
             <SingleColor
               key={index}
