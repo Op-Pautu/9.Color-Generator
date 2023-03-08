@@ -1,3 +1,3 @@
-#### Values JS
 
-[values.js](https://github.com/noeldelgado/values.js)
+
+[Demo](https://op-pautu.github.io/9.Color-Generator/)
